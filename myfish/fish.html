@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <style type="text/css">
+          body{
+              padding-top:10px;
+          } 
+          .all_bg{
+              width:800px;
+              height:600px;
+              margin:0px auto;
+              /*設定為水平置中*/
+          }
+          #allcanvas{
+              position:relative;
+              width:800px;
+              height:600px;
+              margin:0px;
+          }
+          #canvas1{
+              position:absolute;
+              bottom:0;
+              left:0;
+              z-index:1;
+          }
+          #canvas2{
+              position:absolute;
+              bottom:0;
+              left:0;
+              z-index:0; 
+              /*設定canvas,職越小在後面,越大在前面*/
+          }
+        </style>
+    </head>
+    <body>
+        <div class = "all_bg">
+            <div id = "allcanvas">
+                <canvas id="canvas1"  width="800" height="600"></canvas>
+                <canvas id="canvas2"  width="800" height="600"></canvas>
+            </div>
+        </div>
+        <script type="text/javascript" src="main.js"></script> 
+    </body>
+</html>
